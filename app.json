@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "SHAIS Paper Scanner",
-    "slug": "shais-paper-scanner",
+    "slug": "docsscanner",
     "version": "1.1.0",
     "orientation": "portrait",
     "ios": {
@@ -14,7 +14,9 @@
     "android": {
       "package": "in.shais.paperscanner",
       "permissions": [
-        "CAMERA"
+        "CAMERA",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
       ]
     },
     "plugins": [
@@ -26,6 +28,12 @@
       ],
       "expo-sharing",
       "expo-status-bar"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "7eac19ab-7810-4c2b-ada7-7dbbafd08ed3"
+      }
+    },
+    "owner": "rajmathuria"
   }
 }
