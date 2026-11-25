@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "SHAIS Paper Scanner",
+    "slug": "shais-paper-scanner",
+    "version": "1.1.0",
+    "orientation": "portrait",
+    "ios": {
+      "bundleIdentifier": "in.shais.paperscanner",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "SHAIS Paper Scanner needs the camera to scan answer sheets and papers."
+      }
+    },
+    "android": {
+      "package": "in.shais.paperscanner",
+      "permissions": [
+        "CAMERA"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "SHAIS Paper Scanner needs the camera to scan answer sheets and papers."
+        }
+      ],
+      "expo-sharing",
+      "expo-status-bar"
+    ]
+  }
+}
